@@ -18,10 +18,17 @@
     </script>
 
  <script>
-     console.log('2nd')
+     function waitAdverse (cb) {
+         if (!window.adverse){
+            setTimeout(waitAdverse, 100)
+           return
+        }
+            cb(window.adverse)
+       }
       var target = document.getElementById('target')
-      window.adverse(target, {
+      waitAdverse( function (adv) {
+          adv(target, {
         zoneId: '0sdcvl',
-      })
+      }))
     </script>
 </html>
