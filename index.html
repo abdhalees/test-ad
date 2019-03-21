@@ -20,7 +20,7 @@
  <script>
      function waitAdverse (cb) {
          if (!window.adverse){
-            setTimeout(waitAdverse, 100)
+            setTimeout(waitAdverse, 1000)
            return
         }
             cb(window.adverse)
