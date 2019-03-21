@@ -9,8 +9,18 @@
 
 <body>
     <h1>Hello World</h1>
+    <div id='target'> </div>
 </body>
-<script src="https://adverse.lincx.la/ad" data-zone-id="0sdcvl">
+    <script
+      src="https://adverse.lincx.la/ad"
+      data-manual-render="true">
+    </script>
 </script>
 
+ <script>
+      var target = document.getElementById('target')
+      window.adverse(target, {
+        zoneId: '0sdcvl',
+      })
+    </script>
 </html>
