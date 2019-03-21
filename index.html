@@ -26,8 +26,10 @@
             cb(window.adverse)
        }
       var target = document.getElementById('target')
-      waitAdverse(function (adv) {
-          adv(target, { zoneId: '0sdcvl' } ) 
-      })
+      
+      function adverse (adv) {
+          adv(target, { zoneId: '0sdcvl' } })
+          
+      waitAdverse(adverse)
     </script>
 </html>
